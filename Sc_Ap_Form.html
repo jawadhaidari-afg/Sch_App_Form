@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" max-width="2.0">
@@ -7,9 +8,11 @@
     <link rel="stylesheet" href="Sc_Ap_Form.css">
     <title>Scholarship Application Form</title>
 </head>
+
 <body>
     <div class="main">
-        <form class="main1" action="page.php" method="post" target="_self" autocomplete="on" enctype="multipart/form-data" >
+        <fieldset class="main1" action="page.php" method="post" target="_self" autocomplete="on"
+            enctype="multipart/form-data">
             <h1 class="header1">Scholarship Application Form for Middle East countries</h1>
             <label for="FName">Student Name</label>
             <input type="text" name="FName" id="FName" placeholder="First" minlength="3" maxlength="60" required>
@@ -20,7 +23,7 @@
             <input type="number" name="age" id="age" placeholder="Age" min="20" max="25" required><br>
             <label for="countries">Nationality</label>
             <input list="countries" name="countries" id="countries" required>
-             <datalist id="countries">
+            <datalist id="countries">
                 <option value="Afghanistan">
                 <option value="Egypt">
                 <option value="Iran">
@@ -35,31 +38,44 @@
                 <option value="India">
                 <option value="Turkey">
                 <option value="Greece"> </option>
-             </datalist><br>
-             <p style="display: inline;">Gender:</p>    
+            </datalist><br>
+            <p style="display: inline;">Gender:</p>
             <label for="gender">Male</label>
             <input type="radio" name="Gender" id="gender" required>
             <label for="gender">Female</label>
             <input type="radio" name="Gender" id="gender" required><br>
+            <label for="In_Video">Watch the Video To Easily Can Register in This Scholarship</label>
+            <input type="url" name="In_Video" id="In_Video"><br>
             <label for="image">Add Your Photo</label>
             <input type="file" name="image" id="image" accept=".jpg, .png " required><br>
             <label for="email">Email Address</label>
             <input type="email" name="email" id="email" placeholder="xxx@gmail.com"><br>
             <label for="address">Mailing Address</label>
-            <input type="address" name="address" id="address" placeholder="Street Address" maxlength="150" minlength="15"><br>
-            <input type="address" name="address" id="address" placeholder="Street Address Line 2" maxlength="100" minlength="10">
+            <input type="address" name="address" id="address" placeholder="Street Address" maxlength="150"
+                minlength="15"><br>
+            <input type="address" name="address" id="address" placeholder="Street Address Line 2" maxlength="100"
+                minlength="10">
             <input type="address" name="address" id="address" placeholder="City" required><br>
             <input type="address" name="address" id="address" placeholder="Region" required>
             <input type="address" name="address" id="address" placeholder="Postal / Zip Code" required><br>
             <label for="R_degree">Required Documents for Application</label>
-            <input type="text" name="R_degree" id="R_degree" value="High School Deploma/GED" readonly><br> 
+            <input type="text" name="R_degree" id="R_degree" value="High School Deploma/GED" readonly><br>
             <label for="current_status">What is your current study status?</label>
             <input type="text" name="current_status" id="current_status" required><br>
             <label for="M_text">Express Your Motivation for Appliying This Scholarship in 100 Words:</label>
             <input type="text" name="M_text" id="M_text" size="80" height="2em"><br>
             <input type="submit" value="submit">
-            <input type="reset" value="Reset">
-        </form>
-    </div>
+            <input type="reset" value="Reset"><br>
+                  <video width="300" height="160" poster="Poster.png" controls preload="metadata" playsinline style="padding-left: 40em";>
+                 <source src="CA.SP.Instruction_Video.mp4">
+                 <source src="CA.SP.Instruction_Video.webm">
+                 <source src="CA.SP.Instruction_Video.ogg">
+                 The Video Helps to Easily can apply for the specific Application.
+            </video>
+            <audio width="35" height="20" controls  muted   playsinline preload="metadata" autoplay source src="Sc_Ap_Form .mp3" style="padding-left: 40em;"></audio>
+        </fieldset>
+    </div><br>
+
 </body>
+
 </html>
